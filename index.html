@@ -63,7 +63,7 @@
                     let countryArr = data.Countries;
                     let tdata = "";
                     for (let i = 0; i < countryArr.length; ++i) {
-                        if (name === countryArr[i].Country) {
+                        if (name.toLowerCase() === countryArr[i].Country.toLowerCase()) {
                             tdata = `<td>${countryArr[i].Country}</td>
                                 <td>${countryArr[i].CountryCode}</td>
                                 <td>${countryArr[i].NewConfirmed}</td>
